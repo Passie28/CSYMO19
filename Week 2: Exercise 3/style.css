@@ -1,0 +1,49 @@
+* {
+ margin: 0;
+ padding: 0;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+     "Module1 Module2"
+    "Module3 Module4";
+
+grid-gap: 2px;
+}
+
+
+.Module1 {
+    grid-area: Module 1;
+}
+
+.Module2 {
+    grid-area: Module 1;
+}
+
+.Module3 {
+    grid-area: Module 1;
+}
+
+.Module4 {
+    grid-area: Module 1;
+}
+
+
+.grid div:nth-child(1) {
+    background-color: red;
+}
+
+.grid div:nth-child(2) {
+  background-color: green;
+}
+
+.grid div:nth-child(3) {
+    background-color: blue;
+}
+
+.grid div:nth-child(4) {
+  background-color: yellow;
+}

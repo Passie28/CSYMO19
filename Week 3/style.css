@@ -1,0 +1,51 @@
+header{
+    background-color: blue;
+    color: white;
+    padding: 20px;
+    grid-area: header;
+   }
+   
+   .grid{
+    background-color: yellow;
+    grid-area: grid;
+   }
+   
+
+   .grid2{
+    background-color: yellow;
+    grid-area: grid2;
+   }
+
+
+   .grid3{
+    background-color: yellow;
+    grid-area: grid3;
+   }
+
+   main{
+    background-color: darkblue;
+    color: white;
+    grid-area: main;
+   }
+   
+   aside {
+    background-color: lightgreen;
+    grid-area: aside;
+   }
+   
+   footer{
+    background-color: darkgreen;
+    color: white;
+    grid-area: footer;
+   }
+   
+   body{
+    display: grid;
+    grid-template-columns: 40% 40% 20%;
+    grid-template-rows: auto;
+    grid-template-areas: "header header header"
+                        "grid grid2 grid3"
+                        "main main aside"
+                        "footer footer footer";
+   }
+   
